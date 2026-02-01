@@ -23,11 +23,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-950 text-neutral-100 selection:bg-blue-500/30`}
       >
-        {children}
+        <div className="relative min-h-screen flex flex-col">
+          {/* We will dynamic import Navbar to avoid hydration mismatch if needed, but standard import is fine for now */}
+          {children}
+        </div>
       </body>
     </html>
   );

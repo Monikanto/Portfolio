@@ -1,0 +1,56 @@
+'use client';
+
+import Section from './ui/Section';
+import Card from './ui/Card';
+import { Github } from 'lucide-react';
+
+const projects = [
+    {
+        title: 'BeyondChat - AI Powered Chat Support',
+        description: 'A real-time customer support platform using React, Node.js, and Socket.io. Integrated AI-driven automated responses to handle common queries, reducing human workload by 40%. Includes a dashboard for managing chat sessions and user history.',
+        tags: ['React', 'Node.js', 'Socket.io', 'AI Integration'],
+        link: 'https://github.com/Monikanto', // Placeholder based on resume "GitHub Link" text
+    },
+    {
+        title: 'Face Recognition Attendance System',
+        description: 'Automated attendance system capable of detecting and verifying student faces in real-time. Implemented DeepFace for accurate identification and integrated OpenCV for camera-based live capture and automated logging.',
+        tags: ['Python', 'DeepFace', 'OpenCV', 'Automation'],
+        link: 'https://github.com/Monikanto',
+    },
+    {
+        title: 'Article Aggregator Web App',
+        description: 'Full-stack web application that collects and displays category-based articles with automated updates. Integrated Serper.dev search API and Google AI Studio for content extraction. Features secure API routes and user authentication.',
+        tags: ['Full Stack', 'API Integration', 'Google AI', 'Serper.dev'],
+        link: 'https://github.com/Monikanto',
+    },
+    {
+        title: 'Mini Medical AI Model',
+        description: 'Machine learning model for predicting medical outcomes. Managed the end-to-end ML pipeline: data preprocessing, model training, and evaluation. Built an interactive Streamlit web interface for users to input data and visualize predictions.',
+        tags: ['Python', 'Streamlit', 'Scikit-Learn', 'ML'],
+        link: 'https://github.com/Monikanto',
+    },
+];
+
+export default function Projects() {
+    return (
+        <Section className="max-w-4xl mx-auto px-6" delay={0.2}>
+            <h2 className="text-3xl font-bold mb-12 text-neutral-100 flex items-center gap-4">
+                <span className="text-blue-500">03.</span> Projects
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {projects.map((project) => (
+                    <Card
+                        key={project.title}
+                        title={project.title}
+                        description={project.description}
+                        tags={project.tags}
+                        link={project.link}
+                    >
+                        <Github size={20} className="text-neutral-500 group-hover:text-white transition-colors" />
+                    </Card>
+                ))}
+            </div>
+        </Section>
+    );
+}
