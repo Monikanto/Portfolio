@@ -11,13 +11,12 @@ export default function About() {
 
             <div className="text-neutral-400 leading-relaxed text-lg space-y-6">
                 <p>
-                    I am a <span className="text-white font-medium">21-year-old Computer Science undergraduate</span> at The Assam Kaziranga University.
-                    I am passionate about building real-world projects and solving challenging problems.
+                    I am a <span className="text-white font-medium">21-year-old dev </span>  who's trying building things without by breaking them first!
                 </p>
                 <p>
-                    With a strong programming foundation, I enjoy hands-on experience developing software applications across
+                     I enjoy hands-on experience developing software applications across
                     <span className="text-blue-400"> Web, AI, and Systems domains</span>.
-                    My journey involves constantly learning new technologies and applying them to create efficient, scalable solutions.
+                    My journey involves constantly evolving in tech and applying them to create Fun, scalable suff.
                 </p>
             </div>
         </Section>
