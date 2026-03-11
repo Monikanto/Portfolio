@@ -23,11 +23,11 @@ export default function Hero() {
                     transition={{ delay: 0.2, duration: 0.8 }}
                     className="text-blue-400 font-medium tracking-wide mb-4 uppercase text-sm"
                 >
-                    Computer Science Undergrad
+                    Simple slow dev
                 </motion.h2>
 
                 <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-500">
-                    Monikanto Kurmi
+                    Point_dexter
                 </h1>
 
                 <p className="text-lg md:text-xl text-neutral-400 mb-8 max-w-2xl mx-auto leading-relaxed">

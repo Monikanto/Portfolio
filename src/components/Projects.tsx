@@ -9,26 +9,21 @@ const projects = [
         title: 'BeyondChat - AI Powered Chat Support',
         description: 'A real-time customer support platform using React, Node.js, and Socket.io. Integrated AI-driven automated responses to handle common queries, reducing human workload by 40%. Includes a dashboard for managing chat sessions and user history.',
         tags: ['React', 'Node.js', 'Socket.io', 'AI Integration'],
-        link: 'https://github.com/Monikanto', // Placeholder based on resume "GitHub Link" text
+        link: 'https://github.com/Monikanto/beyondchat', // Placeholder based on resume "GitHub Link" text
     },
     {
         title: 'Face Recognition Attendance System',
         description: 'Automated attendance system capable of detecting and verifying student faces in real-time. Implemented DeepFace for accurate identification and integrated OpenCV for camera-based live capture and automated logging.',
         tags: ['Python', 'DeepFace', 'OpenCV', 'Automation'],
-        link: 'https://github.com/Monikanto',
+        link: 'https://github.com/Monikanto/Face-recognition-with--attendance',
     },
     {
-        title: 'Article Aggregator Web App',
-        description: 'Full-stack web application that collects and displays category-based articles with automated updates. Integrated Serper.dev search API and Google AI Studio for content extraction. Features secure API routes and user authentication.',
-        tags: ['Full Stack', 'API Integration', 'Google AI', 'Serper.dev'],
-        link: 'https://github.com/Monikanto',
+        title: 'ForgeAPI Go REST Backend',
+        description: 'Built a scalable RESTful backend in Go using Gin, JWT auth, PostgreSQL, and clean architecture.',
+        tags: ['Go', 'JWt', 'postgresql', 'Gin'],
+        link: 'https://github.com/Monikanto/ForgeAPI',
     },
-    {
-        title: 'Mini Medical AI Model',
-        description: 'Machine learning model for predicting medical outcomes. Managed the end-to-end ML pipeline: data preprocessing, model training, and evaluation. Built an interactive Streamlit web interface for users to input data and visualize predictions.',
-        tags: ['Python', 'Streamlit', 'Scikit-Learn', 'ML'],
-        link: 'https://github.com/Monikanto',
-    },
+    
 ];
 
 export default function Projects() {

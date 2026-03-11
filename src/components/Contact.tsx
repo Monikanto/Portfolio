@@ -21,7 +21,7 @@ export default function Contact() {
             </a>
 
             <footer className="mt-20 pt-10 border-t border-neutral-900 text-neutral-600 text-sm">
-                <p>Designed & Built by Monikanto Kurmi</p>
+                <p>Designed & Built by Mani</p>
             </footer>
         </Section>
     );
