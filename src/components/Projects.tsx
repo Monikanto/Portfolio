@@ -6,10 +6,17 @@ import { Github } from 'lucide-react';
 
 const projects = [
     {
+        title: 'Golf Charity Subscription Platform',
+        description: 'A modern full-stack web app combining golf performance tracking, subscription-based participation, prize draw mechanics, and charity contributions. Features score tracking, monthly prize draws, reward tiers, and an admin panel.',
+        tags: ['Next.js', 'Supabase', 'Stripe', 'Tailwind CSS'],
+        link: 'https://github.com/Monikanto/Golf-Charity-Subscription-Platform',
+        liveLink: 'https://golf-charity-subscription-platform-chi.vercel.app/',
+    },
+    {
         title: 'BeyondChat - AI Powered Chat Support',
         description: 'A real-time customer support platform using React, Node.js, and Socket.io. Integrated AI-driven automated responses to handle common queries, reducing human workload by 40%. Includes a dashboard for managing chat sessions and user history.',
         tags: ['React', 'Node.js', 'Socket.io', 'AI Integration'],
-        link: 'https://github.com/Monikanto/beyondchat', // Placeholder based on resume "GitHub Link" text
+        link: 'https://github.com/Monikanto/beyondchat',
     },
     {
         title: 'Face Recognition Attendance System',
@@ -20,10 +27,9 @@ const projects = [
     {
         title: 'ForgeAPI Go REST Backend',
         description: 'Built a scalable RESTful backend in Go using Gin, JWT auth, PostgreSQL, and clean architecture.',
-        tags: ['Go', 'JWt', 'postgresql', 'Gin'],
+        tags: ['Go', 'JWT', 'PostgreSQL', 'Gin'],
         link: 'https://github.com/Monikanto/ForgeAPI',
     },
-    
 ];
 
 export default function Projects() {
@@ -41,6 +47,7 @@ export default function Projects() {
                         description={project.description}
                         tags={project.tags}
                         link={project.link}
+                        liveLink={'liveLink' in project ? project.liveLink : undefined}
                     >
                         <Github size={20} className="text-neutral-500 group-hover:text-white transition-colors" />
                     </Card>
